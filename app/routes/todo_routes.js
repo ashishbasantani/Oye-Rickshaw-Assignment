@@ -39,8 +39,8 @@ module.exports = function(app, pool) {
 		try {
 			let attribute = req.params.attribute;
 			const value = req.params.value;
-			if(attribute === "title" || attribute === "description" || attribute === "date" ||
-				attribute === "priority" || attribute === "state") {
+			if(attribute === "id" || attribute === "title" || attribute === "description" || 
+				attribute === "date" || attribute === "priority" || attribute === "state") {
 				if(attribute === "date") attribute = "input_date";
 				let db = await pool.connect();
 				const toDo = await db.query("SELECT * FROM todo WHERE "+attribute+" =$1", [value]);

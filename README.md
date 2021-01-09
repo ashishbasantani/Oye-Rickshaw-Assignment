@@ -2,8 +2,9 @@
 
 ## Assumptions:
 1. The port of application is set to run at 5000
-2. The date of ToDo by default is taken as current date
+2. The date of ToDo by default is taken as current date. The format of date is yyyy-mm-dd
 3. The description is not mandatory
+4. For priority, lower the value higher the priority
 
 ## Routes defined:
 1. /create: Purpose of this route is to make a new ToDo entry. Method used is post
@@ -15,7 +16,7 @@
 7. /delete/:id : Delete the row depending on the id passed in params
 
 ## Approach:
-I have used Express for making the server listen to different routes that are created. I simply used the concept of CRUD (Create, Read, Update, Delete) and developed APIs for that. For avoiding duplicacy of code I made APIs in such a way that attribute on which filteration is to be done is passed in end points routes (Eg. /update route, /get route). 
+I have used Express for making the server listen to different routes that are created. I simply used the concept of CRUD (Create, Read, Update, Delete) and developed APIs for that. For avoiding duplicacy of code I made APIs in such a way that attribute on which filteration is to be done is passed in end points routes (Eg. /update route, /get route).
 
 ## DB Schema:
 File todo_database.sql includes the queries for database creation & table creation

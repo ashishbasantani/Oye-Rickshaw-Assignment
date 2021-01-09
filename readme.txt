@@ -1,7 +1,8 @@
 Assumptions:
 1. The port of application is set to run at 5000
-2. The date of ToDo by default is taken as current date
+2. The date of ToDo by default is taken as current date. The format of date is yyyy-mm-dd
 3. The description is not mandatory
+4. For priority, lower the value higher the priority
 
 Routes defined:
 1. /create: Purpose of this route is to make a new ToDo entry. Method used is post

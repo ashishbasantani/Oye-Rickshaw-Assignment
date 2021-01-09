@@ -3,6 +3,7 @@ Assumptions:
 2. The date of ToDo by default is taken as current date. The format of date is yyyy-mm-dd
 3. The description is not mandatory
 4. For priority, lower the value higher the priority
+5. Assuming Node JS and Postgresql is already installed on machine
 
 Routes defined:
 1. /create: Purpose of this route is to make a new ToDo entry. Method used is post
